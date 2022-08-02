@@ -2,11 +2,13 @@
 
 import glob
 
-from regex import F
-
 input_files = glob.glob('.\masukan\*.txt')
 
+print('working on files:')
+
 for file in input_files:
+
+    print(file + '..........', end='')
     with open(file) as f:
         lines = [line.rstrip() for line in f]
   
@@ -17,6 +19,8 @@ for file in input_files:
     for line in lines: # tanpa newline
         f.write(line)
 
+    print('done')
     # for line in lines: # hapus line yg hanya newline
     #     if line != '':
     #         f.write(line + '\n')
+print('finished')
