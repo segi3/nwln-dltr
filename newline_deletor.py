@@ -2,7 +2,7 @@
 
 import glob
 
-input_files = glob.glob('.\masukan\*.txt')
+input_files = glob.glob('./masukan/*.txt')
 
 print('working on files:')
 
