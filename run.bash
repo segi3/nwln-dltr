@@ -1,1 +1,0 @@
-python3 newline_deletor.py
